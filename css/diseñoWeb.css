@@ -1,0 +1,409 @@
+    html {
+        min-height: 100%;
+        position: relative;
+    }
+    
+    body {
+        margin: 0;
+        margin-bottom: 70px;
+        font-family: 'PT Sans', sans-serif;
+    }
+    /* HEADER*/
+    
+    header {
+        background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(57, 57, 57));
+        text-align: center;
+        height: 140px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    header img {
+        width: 135px;
+        height: 115px;
+        margin: 10px;
+        margin-left: 20px;
+    }
+    
+    .titulo {
+        color: white;
+        margin: 10px;
+        font-size: 50px;
+        text-shadow: 0 0 0.2em rgb(243, 76, 229);
+        margin-top: 40px;
+    }
+    
+    .menu {
+        overflow: hidden;
+        background-color: rgb(243, 76, 229);
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0px;
+    }
+    
+    .menu a {
+        width: 25%;
+        text-align: center;
+        float: left;
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        transition: 0.5s;
+    }
+    
+    .menu a:hover {
+        color: black;
+    }
+    
+    .menu a.active {
+        background-color: #ccc;
+        color: black;
+    }
+    /*COMUN CUERPO */
+    
+    input {
+        padding: 5px;
+        width: 100px;
+        margin: 3px;
+    }
+    
+    h1 {
+        color: rgb(243, 76, 229);
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    h3 {
+        color: rgb(243, 76, 229);
+        text-align: center;
+        margin: 0;
+    }
+    
+    h4 {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .boton {
+        width: auto;
+        background-color: white;
+        color: rgb(243, 76, 229);
+        padding: 8px;
+        margin-top: 10px;
+        font-size: 15px;
+        border: 2px solid rgb(243, 76, 229);
+        border-radius: 10px;
+        font-weight: bold;
+        outline: none;
+        transition: 0.5s;
+    }
+    
+    .botonInicio {
+        text-align: right;
+        margin-right: 50px;
+    }
+    
+    .boton:hover {
+        background-color: rgb(243, 76, 229);
+        color: white;
+    }
+    /* CUERPO INDEX*/
+    
+    .cuerpoIndex {
+        width: 500px;
+        margin: auto;
+    }
+    
+    .bienvenida {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 50px;
+        margin-top: 30px;
+    }
+    
+    .reserva {
+        margin-top: 30px;
+    }
+    /*CUERPO FORMULARIO LOGIN */
+    
+    .login {
+        text-align: center;
+        width: 350px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: -20px;
+        padding: 25px;
+        border-radius: 20px;
+        border: 2px solid rgb(243, 76, 229);
+    }
+    
+    .login input {
+        padding: 10px;
+        width: 230px;
+        margin: 5px;
+        border-radius: 10px;
+    }
+    
+    .login .boton {
+        padding: 8px;
+        width: 160px;
+        margin: 15px;
+        font-size: 17px;
+    }
+    
+    .login .email,
+    .contraseña,
+    .linkRegistro {
+        padding: 10px;
+        font-size: 19px;
+    }
+    
+    .login h1 {
+        font-size: 30px;
+        margin: 10px;
+    }
+    
+    .linkRegistro {
+        margin-top: 15px;
+    }
+    
+    .linkRegistro label a {
+        color: rgb(243, 76, 229);
+    }
+    
+    .linkRegistro a:hover {
+        text-shadow: 1px 1px 1px rgb(243, 76, 229);
+    }
+    
+    .botonCloseSesion {
+        width: auto;
+        background-color: rgb(254, 181, 255);
+        padding: 8px;
+        margin-top: 20px;
+        font-size: 15px;
+        border-radius: 10px;
+        font-weight: bold;
+        outline: none;
+        border: 0;
+    }
+    
+    .botonCloseSesion:hover {
+        border: 1px solid rgb(255, 54, 238);
+    }
+    /* MENU LOGIN */
+    
+    .tab {
+        overflow: hidden;
+        background-color: #ffc8fd;
+    }
+    
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.5s;
+        color: black;
+        font-weight: bold;
+    }
+    
+    .tab button:hover {
+        background-color: rgb(253, 135, 236);
+        color: black;
+    }
+    
+    .tab button.active {
+        background-color: rgb(255, 255, 255);
+        border-bottom: 1px solid rgb(243, 76, 229);
+        color: black;
+    }
+    
+    .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 0.1px solid #ccc;
+        border-top: none;
+    }
+    
+    #perfil {
+        display: block;
+    }
+    /* LOGIN GESTION BOOK */
+    
+    .controlLibro {
+        padding: 8px;
+        width: 800px;
+        margin: auto;
+    }
+    /* LOGIN GESTION PERFIL */
+    
+    li {
+        padding: 2px;
+    }
+    /*CUERPO FORMULARIO BOOK y USER*/
+    
+    .register {
+        width: 600px;
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+        padding: 25px;
+        border-radius: 20px;
+        border: 2px solid rgb(243, 76, 229);
+    }
+    
+    .register input {
+        width: 100px;
+        margin-top: 20px;
+    }
+    
+    .register .apellidos {
+        width: 310px;
+    }
+    
+    .register .email {
+        width: 210px;
+    }
+    
+    .register .nombre {
+        width: 200px;
+    }
+    
+    .register .passwd,
+    .register .passwd2 {
+        width: 130px;
+    }
+    
+    .register .direccion {
+        width: 410px;
+    }
+    
+    .register .fechaNacimiento,
+    .inputFechaPublicacion {
+        width: 140px;
+    }
+    
+    .register .boton {
+        width: 150px;
+        margin-top: 30px;
+    }
+    
+    p#erroRegister,
+    p#erroLogin {
+        font-size: 22px;
+        text-align: center;
+        margin: auto;
+        color: red;
+        font-weight: bold;
+    }
+    /* CUERPO CONTACTO */
+    
+    .info {
+        width: 300px;
+        margin: auto;
+        font-size: 16px;
+    }
+    
+    .info p {
+        margin-top: 18px;
+    }
+    
+    .sugerencia {
+        width: 600px;
+        padding: 10px;
+        margin: auto;
+        background-color: rgb(248, 223, 239);
+        border-radius: 10px;
+        text-align: center;
+    }
+    
+    .sugerencia textarea {
+        margin-left: 28px;
+    }
+    
+    .sugerencia .boton {
+        margin: 25px;
+    }
+    /* PERFIL */
+    
+    .MiPerfil {
+        width: 500px;
+        margin: 20px;
+        padding: 25px;
+        border-radius: 20px;
+        border: 2px solid rgb(243, 76, 229);
+    }
+    /* RESERVAR */
+    
+    .filterSearch {
+        width: 700px;
+        margin: auto;
+        font-size: 18px;
+    }
+    
+    table {
+        margin: auto;
+        text-align: center;
+        border-collapse: collapse;
+    }
+    
+    table th {
+        padding: 10px;
+    }
+    
+    table td {
+        padding: 10px;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+    }
+    
+    tr:nth-child(even) {
+        background-color: rgb(255, 226, 253);
+    }
+    
+    .searchtxt {
+        width: 400px;
+    }
+    
+    .btnBooking,
+    .btnDelete {
+        background: rgb(243, 76, 229);
+        color: white;
+        border: 1.5px solid rgb(243, 76, 229);
+        border-radius: 10px;
+        padding: 7px;
+        outline: none;
+        font-weight: bold;
+        transition: 0.5s;
+    }
+    
+    .btnBooking:hover,
+    .btnDelete:hover {
+        background: rgb(255, 223, 249);
+        color: rgb(243, 76, 229);
+    }
+    
+    .searchGenero {
+        height: 35px;
+    }
+    /* FOOTER */
+    
+    footer {
+        background: rgb(243, 76, 229);
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    
+    footer p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
